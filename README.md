@@ -9,3 +9,10 @@ Merge data from local GnuCash fund/account tracking and Deer Park invoices
 
 WaterFund.R to generate report
 
+Procedure
+---------
+
+```
+(cd ~/Documents/DeerPark; for f in *.pdf ; do pdfbox ExtractText $f; done)
+./getBottles.py ~/Documents/DeerPark/*.txt > bottles.csv
+```
