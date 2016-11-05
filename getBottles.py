@@ -8,7 +8,7 @@ import os
 # Output: CSV with date and bottle counts
 
 pDate = re.compile(' *(\d{1,2})\/(\d{1,2}) ')
-pBottle = re.compile(' *BOTTLE DEPOSIT: + (\d+) (DELIVERED|CHARGED)')
+pBottle = re.compile(' *BOTTLE DEPOSIT: +(\d+) +(DELIVERED|CHARGED)')
 
 print '"date","bottles"'
 for fname in argv:
